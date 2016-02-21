@@ -1,0 +1,1230 @@
+/* ============================================================ */
+/* global */
+
+html {
+  height:100%;
+}
+
+body {
+  background: #f9f9f9;
+  color: #212121;
+  font-size: 1.5rem;
+  height:100%;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  margin-top: 0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 5.6rem;
+  font-weight: 300;
+  line-height: 1.25;
+  margin: 0 0 2.4rem 0;
+  max-width: 72rem;
+  text-shadow: 0 0 8px #0071bc;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 300;  
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0rem 0 1.8rem 0;
+}
+
+h4 .skip-to-section {
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+h5 {
+  color: #494440;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin: 0 0 .6rem 0;
+  text-transform: uppercase;
+}
+
+h6 {
+}
+
+p {
+  margin: 0 0 1.2rem 0;
+}
+
+a,
+a:visited,
+p a {
+  color: #0071bc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #112e51;
+}
+
+button {
+  border-radius: .4rem;
+  font-size: 1.5rem;
+  margin: 0 .8rem 0 0;
+  padding: .8rem 1.2rem 1rem 1.2rem;
+  -webkit-transition: all .12s ease-out;  
+  -moz-transition: all .12s ease-out;  
+  -o-transition: all .12s ease-out;  
+  -ms-transition: all .12s ease-out;  
+  transition: all .12s ease-out;  
+}
+
+a:hover,
+button:hover {
+  -webkit-transition: all .12s ease-out;  
+  -moz-transition: all .12s ease-out;  
+  -o-transition: all .12s ease-out;  
+  -ms-transition: all .12s ease-out;  
+  transition: all .12s ease-out;  
+}
+
+.usa-button {
+  font-size: 1.5rem;
+  margin: 0 .8rem 0 0;
+  padding: .8rem 1.2rem 1rem 1.2rem;
+  text-decoration: none !important;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e4e2e0;
+  margin: 2.4rem 0;  
+}
+
+ul {
+  margin: 0;
+}
+
+table  {
+  margin: 0 0 1.6rem 0;
+  position: relative;
+}
+
+table th,
+table td {
+  border: 0;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+table th {
+  background: #fafafa;
+  border: 1px solid #bfcad9;
+  color: #494440;
+  font-weight: 700;
+  padding: .8rem 1.2rem .8rem 1.2rem;
+}
+
+table td {
+  border: 1px solid #e4ebf3;
+  padding: 1.2rem 1.2rem .8rem 1.2rem;
+}
+
+table td:last-child {
+  border-right: 1px solid #e4ebf3;
+}
+
+label {
+  margin: 0 0 .2rem 0;
+  max-width: 60rem;
+}
+
+form {
+  max-width: 100%;  
+}
+
+input, input[type="text"], input[type="email"], input[type="password"], input[type="url"], input[type="tel"], input[type="number"], input[type="search"], input[type="file"], input[type="date"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea, select {
+  margin: 0;
+  max-width: 36rem;
+}
+
+input[type=text],
+select {
+  font-size: 1.5rem;
+  border: 1px solid #d6d7d9;
+  border-radius: 0;
+  margin: 0 0 .4rem 0;
+  padding: .4rem .8rem .6rem .8rem;
+  -webkit-transition: all .12s ease-out;  
+  -moz-transition: all .12s ease-out;  
+  -o-transition: all .12s ease-out;  
+  -ms-transition: all .12s ease-out;  
+  transition: all .12s ease-out;  
+}
+  
+button:focus,
+input:focus,
+select:focus {
+  -webkit-transition: all .12s ease-out;  
+  -moz-transition: all .12s ease-out;  
+  -o-transition: all .12s ease-out;  
+  -ms-transition: all .12s ease-out;  
+  transition: all .12s ease-out;  
+}
+
+a:focus,
+input[type=text]:focus,
+select:focus {
+  background-color: #fff;
+  box-shadow: 0 0 1.6rem rgba(0, 0, 0, .24) !important;  
+}
+
+input[type=text]:focus,
+input[type=radio]:focus,
+input[type=checkbox]:focus,
+select:focus {
+  border: 1px solid #aeb0b5;
+  border-radius: .4rem;
+}
+
+input:hover,
+select:hover {
+  border: 1px solid #212121;
+  -webkit-transition: all .12s ease-out;  
+  -moz-transition: all .12s ease-out;  
+  -o-transition: all .12s ease-out;  
+  -ms-transition: all .12s ease-out;  
+  transition: all .12s ease-out;  
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  color: #212121;
+  margin: 0 0 .8rem 0;
+}
+
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+  box-shadow: 0 0 0 1px #d6d7d9;
+  display: inline-block;
+  height: 1.4rem;
+  -webkit-transition: all .12s ease-out;  
+  -moz-transition: all .12s ease-out;  
+  -o-transition: all .12s ease-out;  
+  -ms-transition: all .12s ease-out;  
+  transition: all .12s ease-out;  
+  width: 1.4rem;
+}
+
+input[type="checkbox"] + label:hover::before,
+input[type="radio"] + label:hover::before {
+  box-shadow: 0 0 0 1px #212121;  
+  -webkit-transition: all .12s ease-out;  
+  -moz-transition: all .12s ease-out;  
+  -o-transition: all .12s ease-out;  
+  -ms-transition: all .12s ease-out;  
+  transition: all .12s ease-out;  
+}
+
+input[type="radio"]:checked + label::before {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0071bc;
+}
+
+input[type="radio"]:focus + label::before,
+input[type="radio"]:checked:focus + label::before {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0071bc;
+}
+
+input[type="checkbox"] + label::before {
+  background-size: 16px 16px;
+  border-radius: 0;  
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-size: 16px 16px;
+  -webkit-transition: all .12s ease-out;  
+  -moz-transition: all .12s ease-out;  
+  -o-transition: all .12s ease-out;  
+  -ms-transition: all .12s ease-out;  
+  transition: all .12s ease-out;  
+}
+
+input[type="checkbox"]:focus + label::before,
+input[type="checkbox"]:checked:focus + label::before {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0071bc;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 700;
+}
+
+
+
+/* ============================================================ */
+/* content & form sections */
+
+.content {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+  height: auto;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0;
+  position: relative;
+  width: 90%;
+}
+
+.form__section { 
+  background: #fff;
+  border-top: 8px solid #112e51;
+  min-height: 100% !important;
+  padding-bottom: 12rem;
+}
+
+.form__section-intro { 
+  background: url(../img/intro.png) right bottom no-repeat #112e51;
+  border-bottom: 1px solid #112e51;
+  border-top: 8px solid #212121;
+  color: #fff;
+  display: block;
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 1.2rem 3rem 3rem 3rem;
+  position: relative;
+}
+
+.form__section--intro-text {
+  background: rgba(0,0,0,.4);
+  border-radius: 4px;
+  margin: 0 0 1.6rem 0;
+  max-width: 64rem;
+  padding: 2.4rem 3rem 3rem 3rem;
+}
+
+.form__section--intro-text ul {
+  margin: 0 0 1.2rem 0;
+}
+
+.form__section--intro-text p {
+  margin: 0 0 1.6rem 0;
+}
+
+.form__section--intro-text a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.form__section--intro-text .small {
+  font-size: 1.2rem;
+}
+
+.form__section-intro input {
+  font-weight: normal;
+} 
+
+.form__section--intro-logo {
+  background: #fff;
+  border-radius: 4px 0 0 4px;
+  max-width: 160px;
+  padding: .8rem;
+  position: absolute;
+  right: 0;
+  top: 3rem;
+}
+
+.form__section-thanks { 
+  background: #112e51;
+}
+
+#form__section-1,
+#form__section-2,
+#form__section-3,
+#form__section-4,
+#form__section-5,
+#form__section-6 {
+  display: none;
+}
+
+.form__section--body {
+  padding: 0;
+}
+
+.form__section--header {
+  background: #0071bc;
+  border-bottom: 1px solid #112e51;
+  color: #fff;
+  margin: 0;
+  padding: 1.6rem 3rem 1.2rem 3rem;
+}
+
+.form__section--banner {
+  background: #e7f4e4;
+  color: #2e8540;
+  display: none;
+  font-weight: 700;
+  margin-top: .2rem;
+  padding: .8rem 3rem 1.2rem 3rem; 
+}
+
+.form__section--header a.help-trigger {
+  color: #fff;
+}
+
+.form__section--header a.help-trigger:hover,
+.form__section--header a.help-trigger:focus {
+  color: #494440;
+}
+
+.form__section--instruction {
+  background: #FFFAF0;
+  border-left: 4px solid #fad980;
+  border-radius: .4rem;
+  color: #5b616b;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin: 0 0 2.4rem 0;
+  max-width: 60rem;
+  overflow: auto;
+  padding: 1.2rem 1.6rem .4rem 1.6rem;
+}
+
+.form__section--instruction ul {
+  margin: 0 0 1.2rem 0;
+}
+
+.form__section--instruction-mobile {
+  display: none; 
+}
+
+.form__section--instruction p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-top: 0;
+  margin-bottom: .8rem;
+}
+
+#form__section--error {
+  color: #e31c3d;
+  display: none;
+}
+
+#form__section--shortcut {
+  display: none;
+  padding: 0 1.6rem 0 0;
+}
+
+.form__section--summary {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.form__section--summary p {
+  line-height: 1.5;
+  margin: 0 0 1.2rem 0;
+}
+
+.form__section--summary-not-required {
+  color: #2e8540;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.form__section--summary p.list-opener {
+  margin: 0;
+}
+
+.form__section--summary-sub {
+  margin: 2.4rem 0 2.4rem 2.4rem;
+}
+
+.form__section--summary table {
+  border-bottom: 1px solid #e4ebf3;
+  font-size: 1.3rem;
+  margin: 0 0 2.4rem 0;
+  max-width: 64rem;
+  min-width: 64rem;
+}
+
+.form__section--summary table span {
+  color: #666;
+}
+
+.form__section--summary table .summary-01 {
+  width: 25%;
+}
+
+.form__section--summary table .summary-02 {
+  width: 45%;
+}
+
+.form__section--summary table .summary-03 {
+  width: 30%;
+}
+
+.form__section--summary table th {
+  border: 0;
+  border-top: 1px solid #e4ebf3;
+  padding: .2rem 1.2rem .2rem 1.2rem;
+}
+
+.form__section--summary table td {
+  border: 0;
+  border-top: 1px solid #e4ebf3;
+  padding: .2rem 1.2rem .2rem 1.2rem;
+}
+
+.form__section--sub {
+  margin: 0;
+  padding: 2.4rem 3rem 7.2rem 3rem; 
+  position: relative;
+}
+
+.form__section--sub:after {
+  content:""; 
+  background: #112e51; 
+  height: 1px; 
+  left: 0; 
+  position: absolute; 
+  top: 0; 
+  width: 25%;
+}
+
+.form__section--sub:first-child:after {
+  height: 0; 
+}
+
+#ssn-number {
+  width: 36rem;
+}
+
+#total-household-members,
+#total-household-income {
+  color: #2e8540;
+  font-size: 2.1rem;
+  font-weight: 300;  
+}
+
+#household-summary {
+  background-color: rgba(255,255,255,.95);
+  bottom: 7.6rem;
+  display: none;
+  font-size: 2.1rem;
+  font-weight: 300;
+  margin-left: -3rem;  
+  max-width: 960px;
+  padding: 1.2rem 3rem;
+  position: fixed;
+  text-align: left;
+  width: 90%;
+  z-index: 3;  
+}
+
+
+
+/* ============================================================ */
+/* form navigation & indicators */
+
+#form__previous,
+#form__submit {
+  display: none;
+}
+
+#indicator__bar {
+  bottom: 3.6rem;
+  position: absolute;
+  right: 2.4rem;
+  z-index: 3;
+}
+  
+#indicator__bar li {
+  background: #e1f3f8;
+	border-radius: 50%;
+  display: inline-block;
+  height: 1.2rem;
+  margin: 0 .8rem 0 0;
+  overflow: hidden;
+  text-indent: -999rem;
+  width: 1.2rem;
+}
+
+#indicator__bar .indicator__bar--active {  
+  background: #fff;
+  border: 2px solid #046b99;
+}
+
+ul li:after, 
+ol li:after {
+  display: none;
+}
+
+.indicator__text {
+  color: #5b616b;
+  font-size: 1.2rem;
+}
+
+#button_wrapper--navigate {
+  background-color: rgba(255,255,255,.95);
+  bottom: 0;
+  display: none;
+  font-weight: 700;
+  max-width: 960px;
+  padding: 1.6rem 3rem 3rem 3rem;
+  position: fixed;
+  width: 90%;
+  z-index: 2;
+}
+
+
+
+/* ============================================================ */
+/* errors, custom fields, & help text */
+
+.input__error-message {
+  color: #e31c3d;
+  display: none;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 0 0 1.2rem 0;
+}
+
+input__error-message--required,
+input__error-message--validation {
+  display: none;
+}
+
+.input__error {
+  border-bottom: 4px solid #e31c3d !important;
+}
+
+.label-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.input__wrapper {
+  margin: 0 0 1.6rem 0;
+}
+
+.input-type-text__wrapper {
+  position: relative;
+}
+
+.input-type-text__wrapper input[type=text] {
+  padding-left: 2rem;
+}
+
+.input-type-text__addon {
+  font-size: 1.5rem;
+  left: .8rem;
+  position: absolute;
+  top: .5rem;
+  z-index: 2;
+}
+
+.group-fields {
+  overflow: hidden;
+}
+
+.group-fields-section {
+  float: left;
+  clear: none;
+  margin-right: 2.4rem;
+}
+
+#street-address {
+  width: 36rem;
+}
+
+.input-radio-styled li {
+  display: inline-block;
+}
+
+.input-radio-styled li label {
+  border: 1px solid #d6d7d9;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  margin: 0 .4rem 0 0;
+  padding: 0 1.2rem .4rem 1.2rem;
+  -webkit-transition: all .12s ease-out;  
+  -moz-transition: all .12s ease-out;  
+  -o-transition: all .12s ease-out;  
+  -ms-transition: all .12s ease-out;  
+  transition: all .12s ease-out;  
+}
+
+.input-radio-styled input[type="radio"]:hover + label {
+  border: 1px solid #212121;
+  -webkit-transition: all .12s ease-out;  
+  -moz-transition: all .12s ease-out;  
+  -o-transition: all .12s ease-out;  
+  -ms-transition: all .12s ease-out;  
+  transition: all .12s ease-out;  
+}
+
+.input-radio-styled input[type="radio"]:focus + label {
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, .4) !important;
+}
+
+.input-radio-styled input[type="radio"]:checked + label {
+  background-color: #0071bc;
+  border: 1px solid #0071bc;
+  color: #fff;
+  content: "";
+  -webkit-transition: all .12s ease-out;  
+  -moz-transition: all .12s ease-out;  
+  -o-transition: all .12s ease-out;  
+  -ms-transition: all .12s ease-out;  
+  transition: all .12s ease-out;  
+}
+
+.input-radio-styled input[type="radio"] + label::before,
+.input-radio-styled input[type="radio"]:checked + label::before {
+  background: none;
+  box-shadow: none;
+  content: "";
+  margin: 0;
+  width: 0;
+}
+
+.input-radio-styled--narrow {
+  width: 100%;  
+}
+.input-radio-styled--narrow li {
+  display: block;
+  margin-bottom: .8rem;
+  width: 100%;
+}
+
+.required-marker {
+  color: #e31c3d;
+}
+
+.help {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+
+.help-text {
+  background: #e1f3f8;
+  border-radius: .4rem;
+  border: 1px solid #02bfe7;
+  color: #212121;
+  display: none;
+  font-size: 1.3rem;
+  font-weight: normal;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 1.8rem;
+  max-width: 36rem;
+  padding: .8rem 1.2rem 0 1.2rem;
+  position: absolute;
+  top: 300px;
+  z-index: 999;
+}
+
+.help-text p {
+  margin: 0 0 .8rem 0;
+}
+
+.help-text ul {
+  margin: 0 0 .4rem 0;
+}
+
+.help-text li {
+  display: inherit;
+  margin: 0 0 .8rem 0;
+}
+
+a.help-trigger {
+  background: url(../img/help.png) right top no-repeat;
+  background-size: 12px 12px;
+  border-bottom: 1px dotted #aaa;  
+  color: #494440;
+  padding: 0 1.6rem 0 0;
+}
+
+a.help-trigger:hover,
+a.help-trigger:focus {
+  background: url(../img/help.png) right top no-repeat #e1f3f8;
+  background-size: 12px 12px;
+  text-decoration: none;
+}
+
+table .help-trigger,
+table .help-trigger {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.form__section--intro-text .input__error-message {
+  background: #e31c3d;
+  color: #fff;
+}
+
+
+
+
+/* ============================================================ */
+/* tables */
+
+.remove-row {
+  background: url(../img/remove-row.png) left top no-repeat;
+  background-size: 20px 40px;
+  display: block;
+  height: 20px;
+  position: absolute;
+  left: -2.6rem;
+  top: 1.6rem;
+  text-indent: -999em;
+  width: 20px;
+}
+
+.remove-row:hover {
+  background: url(../img/remove-row.png) left bottom no-repeat;
+  background-size: 20px 40px;
+  -webkit-transition: none;  
+  -moz-transition: none; 
+  -o-transition: none;  
+  -ms-transition: none;  
+  transition: none;  
+}
+
+.adult .remove-row {
+  top: 4rem;
+}
+
+.adult td label {
+  font-size: 1.2rem;
+}
+
+.child td, 
+.adult td {
+  position: relative;
+}
+
+.child td:last {
+  padding-bottom: 0;
+}
+
+#child-column-first-name {
+  width: 23%;
+}
+
+#child-column-middle-initial {
+  width: 9%;
+}
+
+#child-column-last-name {
+  width: 23%;
+}
+
+#child-column-student-status {
+  width: 15%;
+}
+
+#child-column-other-status {
+  width: 30%;
+}
+
+#child-income-amount {
+  width: 36rem;
+}
+  
+#child-column-name {
+  width: 20%;
+}  
+
+#adult-column-first-name {
+  width: 20%;
+}
+
+#adult-column-last-name {
+  width: 20%;
+}
+
+#adult-column-income {
+  width: 60%;
+}
+
+.label-hidden-text {
+  text-indent: -999em;
+}
+
+.adult-income {
+  padding-bottom: .6rem;  
+}
+
+.adult-income .input-type-text__wrapper,
+.adult-income fieldset {
+  display: inline-block;
+  margin-right: 1.2rem;
+  vertical-align: top;
+}
+
+.adult-income fieldset {
+  margin-top: .2rem; 
+}
+
+.adult-income input[type=text] {
+  width: 12rem;
+}
+
+.adult-income fieldset li {
+  display: inline-block;
+}
+
+.child-income-section,
+.adult-income-section {
+  margin: 0 0 .8rem 0;
+}
+
+.child-income-section label,
+.adult-income-section label {
+  font-size: 1.3rem;
+}
+
+.child-income-section .input__error-message,
+.adult-income-section .input__error-message {
+  margin: 0;
+}
+
+.child-income-section .input-type-text__wrapper, 
+.adult-income-section .input-type-text__wrapper {
+  display: inline-block;
+  margin: 0 1.2rem 0 0;
+  vertical-align: top;
+}
+
+.child-income-section fieldset,
+.adult-income-section fieldset {
+  display: inline-block;
+  margin-top: .2rem;
+  vertical-align: top;
+}
+
+li.input-indent {
+  margin: 0 0 2.4rem 2.2rem;
+}
+
+
+
+/* ============================================================ */
+/* misc */
+
+a.link-reverse {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a.link-reverse:hover {
+  text-decoration: none;
+}
+
+@-webkit-keyframes highlight {   
+   0% {background: #fad980;}
+   100% {background: none;}
+}
+
+@keyframes highlight {
+   0% {background: #fad980;}
+   100% {background: none;}
+}
+
+.highlight {
+   -webkit-animation: highlight .48s ease-out 1;
+   animation: highlight .48s ease-out 1;
+}
+
+#footer {
+  font-size: 1.2rem;
+}
+
+#loading {
+  background: url(../img/loading.gif) center 240px rgba(255,255,255,.9) no-repeat;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-indent: -999em;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+
+
+/* ============================================================ */
+/* statement & view data page */
+
+#statement {
+  background: #fff;
+  margin: 0 auto; 
+  max-width: 960px;
+  padding: 2.4rem 3rem 1.6rem 3rem;
+  width: 90%;
+}
+
+#statement h2 {
+  margin: 0 0 1.6rem 0;
+}
+
+
+#view {
+  font-size: 1.2rem;  
+  line-height: 1.25;
+  margin: 0;
+  padding: 2.4rem;
+  min-height: 100%;
+  width: 150%;
+}
+
+#view h2 {
+  display: inline-block;
+  margin: 0 1.2rem 0 0;
+  vertical-align: middle;
+}
+
+#view table {
+  margin-bottom: 6rem;
+}
+
+#view table th {
+  background: #d6d7d9;
+  border-bottom: 0;
+}
+
+#view .table__header--secondary {
+  background: #e7e7e8;
+  border-bottom: 1px solid #bfcad9;
+  border-top: 0;
+}
+
+#view table th, 
+#view table td {
+  max-width: 32rem;
+  padding: .2rem .4rem;
+}
+
+#view table td.dupe {
+  text-indent: -999em;
+}
+
+#view .view__title {
+  margin: 0 0 2.4rem 0;
+}
+
+#view .view__title a {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+/* ============================================================ */
+/* mobile */
+
+@media only screen and (max-width: 600px) {
+ 
+  h1 {
+    font-size: 3.2rem;
+  }
+  
+  h2 {
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+  
+  button {
+    margin-bottom: 1.2rem;
+    padding: 1rem 1.2rem 1.2rem 1.2rem;
+  }
+  
+  table th {
+    display: none;
+  }
+  
+  table tr {
+    border-bottom: 1px solid #e4ebf3;
+    border-top: 1px solid #e4ebf3;
+  }
+  
+  table td {
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    width: 100% !important;
+  }
+  
+  table td label,
+  table td .label-hidden,
+  table td .label-hidden-text {
+    display: block;
+    height: auto;
+    margin: 0 0 2px 0;
+    position: static;
+    text-indent: 0;
+    width: auto;
+  }
+  
+  .child-income-section .input-type-text__wrapper,
+  .adult-income-section .input-type-text__wrapper {
+    margin-bottom: .8rem;
+    width: 100%;
+  }
+  
+  .child-income-section,
+  .adult-income-section {
+    margin-bottom: 3.2rem;
+  }
+
+  .child-income-section fieldset,
+  .adult-income-section fieldset {
+    width: 100%;
+  }
+
+  .child-income-section label,
+  .child td label,
+  .adult-income-section label,
+  .adult td label {
+    font-size: 1.5rem;
+  }
+
+  .adult-income-section fieldset ul label {
+    font-size: 1.2rem;
+  }
+
+  .child-income-section fieldset ul,
+  .adult-income-section fieldset ul {
+    margin-bottom: 0;
+    width: 100%;
+  }
+  
+  .child-income-section .input-radio-styled li,
+  .adult-income-section .input-radio-styled li {
+    margin: 0 4% 0 0;
+    width: 46%;
+  }
+
+  .child-income-section .input-radio-styled li label,
+  .adult-income-section .input-radio-styled li label {  
+    margin: 0 0 1.2rem 0;
+    padding: .2rem 0 .4rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .content {
+    width: 100%;
+  }
+
+  .form__section-intro {
+    background-size: 50%;
+  }
+  
+  .form__section--intro-logo {
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 2.4rem auto;
+    position: static;    
+    width: auto;
+  }
+
+  .form__section--intro-logo img {
+    height: 80px;
+    margin: 0 auto;
+  }
+
+  .form__section--instruction-mobile {
+    display: block; 
+  }
+  
+  .form__section--summary table {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .form__section--summary table tr {
+    border-bottom: 1px solid #e4ebf3;
+  }
+
+  .form__section--summary table td {
+    border: 0;
+  }
+  
+  #button_wrapper--navigate {
+    padding-bottom: 3.6rem;
+    width: 100%;
+  }
+  
+  #indicator__bar {
+    bottom: 1.2rem;
+    left: 50%;
+    transform: translate(-50%, 0);     
+  }
+
+  #ssn-number,
+  #street-address {
+    width: 100%;
+  }
+  
+  .group-fields-section {
+    width: 100%;
+  }
+
+  #household-summary {
+    position: static;
+    width: 90%;
+  }
+  
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 960px) {
+
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  .form__section--intro-logo {
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 2.4rem auto;
+    position: static;    
+    width: auto;
+  }
+
+  .child-income-section fieldset ul,
+  .adult-income-section fieldset ul {
+    margin-bottom: 1.2rem;
+  }
+
+}
