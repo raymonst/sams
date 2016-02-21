@@ -5,4 +5,11 @@
   $password = "6d6eb5ab";
   $database = "heroku_04f0f2cc6d24dc9";
 
+/*
+  $servername = "localhost";
+  $username = "root";
+  $password = "root";
+  $database = "applicants";
+*/
+
 ?>

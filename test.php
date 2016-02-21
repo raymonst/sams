@@ -11,7 +11,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/eat-ux.css" rel="stylesheet">
     <script type="text/javascript" src="js/vendor/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="js/eat-ux.min.js"></script>
+    <script type="text/javascript" src="js/eat-ux.js"></script>
   </head>
   
   <body>
@@ -173,7 +173,7 @@ Yes, a household could participate in more than one of the assistance programs (
               <tr class="child">
                 <td>
                   <label for="child-first-name-1" class="label-hidden">Child First Name</label>
-                  <input id="child-first-name-1" name="child-first-name-1" type="text" class="required" value="a">
+                  <input id="child-first-name-1" name="child-first-name-1" type="text" class="required" value="Jane">
                   <span class="input__error-message" role="alert"><span class="input__error-message--required">First name is required</span></span>
                 </td>
                 <td>
@@ -182,7 +182,7 @@ Yes, a household could participate in more than one of the assistance programs (
                 </td>
                 <td>
                   <label for="child-last-name-1" class="label-hidden">Child Last Name</label>
-                  <input id="child-last-name-1" name="child-last-name-1" type="text" class="required" value="s">
+                  <input id="child-last-name-1" name="child-last-name-1" type="text" class="required" value="Doe">
                   <span class="input__error-message" role="alert"><span class="input__error-message--required">Last name is required</span></span>
                 </td>
                 <td>

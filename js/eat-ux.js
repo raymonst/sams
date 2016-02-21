@@ -4,9 +4,38 @@
 // children, childIncome, adults, adultIncome = array of objects
 var summary = {
   "children": [],
-  "childIncome": {},
+  "childIncome": [
+    {
+      "annual": 0,
+      "annualEarnings": 0,
+      "annualOther": 0,
+      "annualOtherHousehold": 0,
+      "annualSocial": 0,
+      "earningsAmount": 0,
+      "earningsFrequency": "",
+      "otherAmount": 0,
+      "otherFrequency": "",
+      "otherHouseholdAmount": 0,
+      "otherHouseholdFrequency": "",
+      "socialAmount": 0,
+      "socialFrequency": ""
+    }    
+  ],
   "adults": [],
-  "adultIncome": [],
+  "adultIncome": [
+    {
+      "annual": 0,
+      "annualAssistance": 0,
+      "annualEarnings": 0,
+      "annualPension": 0,
+      "assistanceAmount": 0,
+      "assistanceFrequency": "",
+      "earningsAmount": 0,
+      "earningsFrequency": "",
+      "pensionAmount": 0,
+      "pensionFrequency": ""
+    }  
+  ],
   "raceEthnicity": {
     "ethnicity": "",
     "race": []  
@@ -1408,7 +1437,7 @@ $(document).ready(function() {
         if (noError) {
           form.nextSection();        
         };
-        
+                
         return false;
         break;
         
@@ -1431,13 +1460,11 @@ $(document).ready(function() {
   // SUBMIT APPLICATION 
   $("#form__submit").on("click", function() {
     
-    /* console.log(summary); */
-    
     $.ajax({
       url: "connect.php",
       type: "POST",
       data: {"summary": JSON.stringify(summary)}
-    }).always(function() {
+    }).always(function(data) {
       $("#loading").fadeIn(120);
     }).fail(function() {
     }).done(function(data) {

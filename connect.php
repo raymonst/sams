@@ -52,33 +52,11 @@
 
 
     // grab the householdID, to be used in "adults" & "children" tables
-    //$last_id = $conn->insert_id;
-    $last_id = mysqli_insert_id($conn);
+    $last_id = $conn->insert_id;
+    //$last_id = mysqli_insert_id($conn);
     
     
     
-    // enter data into "adults" table
-    for ($i = 0; $i < count($data[adults]); $i++) {
-      $query = "INSERT INTO adults (householdID, firstName, lastName, earningsAmount, earningsFrequency, assistanceAmount, assistanceFrequency, pensionAmount, pensionFrequency, annualEarnings, annualAssistance, annualPension, annual) VALUES ("
-        .$last_id
-        .",'".$data[adults][$i][firstName]."'"
-        .",'".$data[adults][$i][lastName]."'"
-        .",".$data[adultIncome][$i][earningsAmount]
-        .",'".$data[adultIncome][$i][earningsFrequency]."'"
-        .",".$data[adultIncome][$i][assistanceAmount]
-        .",'".$data[adultIncome][$i][assistanceFrequency]."'"
-        .",".$data[adultIncome][$i][pensionAmount]
-        .",'".$data[adultIncome][$i][pensionFrequency]."'"
-        .",".$data[adultIncome][$i][annualEarnings]
-        .",".$data[adultIncome][$i][annualAssistance]
-        .",".$data[adultIncome][$i][annualPension]
-        .",".$data[adultIncome][$i][annual]
-        .")";
-      $conn->query($query);
-    };
-
-
-
     // enter data into "children" table
     for ($i = 0; $i < count($data[children]); $i++) {
       $query = "INSERT INTO children (householdID, firstName, middleInitial, lastName, studentStatus, fosterStatus, headstartStatus, homelessMigrantRunawayStatus, earningsAmount, earningsFrequency, socialAmount, socialFrequency, otherHouseholdAmount, otherHouseholdFrequency, otherAmount, otherFrequency, annualEarnings, annualSocial, annualOtherHousehold, annualOther, annual) VALUES ("
@@ -106,6 +84,29 @@
         .")";
       $conn->query($query);
     };
+
+
+
+    // enter data into "adults" table
+    for ($i = 0; $i < count($data[adults]); $i++) {
+      $query = "INSERT INTO adults (householdID, firstName, lastName, earningsAmount, earningsFrequency, assistanceAmount, assistanceFrequency, pensionAmount, pensionFrequency, annualEarnings, annualAssistance, annualPension, annual) VALUES ("
+        .$last_id
+        .",'".$data[adults][$i][firstName]."'"
+        .",'".$data[adults][$i][lastName]."'"
+        .",".$data[adultIncome][$i][earningsAmount]
+        .",'".$data[adultIncome][$i][earningsFrequency]."'"
+        .",".$data[adultIncome][$i][assistanceAmount]
+        .",'".$data[adultIncome][$i][assistanceFrequency]."'"
+        .",".$data[adultIncome][$i][pensionAmount]
+        .",'".$data[adultIncome][$i][pensionFrequency]."'"
+        .",".$data[adultIncome][$i][annualEarnings]
+        .",".$data[adultIncome][$i][annualAssistance]
+        .",".$data[adultIncome][$i][annualPension]
+        .",".$data[adultIncome][$i][annual]
+        .")";
+      $conn->query($query);
+    };
+
 
 
   } else {
