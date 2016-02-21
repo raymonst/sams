@@ -1199,6 +1199,7 @@ $(document).ready(function() {
           summaryText += "My household does not participate in SNAP, TANF, or FDPIR.<br/>";
         }
         $("#form__section--summary-2").html(summaryText);
+        $("#form__section--summary-total-household-members").text(summary.household.size);
       
         // check for error
         var $section = $(this).prev(".form__section");

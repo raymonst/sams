@@ -799,7 +799,7 @@ Yes, a household could participate in more than one of the assistance programs (
               </ul>
             </div>            
             <div id="household-summary">
-              My household has <span id="total-household-members">2</span> members and earns $ <span id="total-household-income">0</span> annually.
+              My household has <span id="total-household-members">0</span> members and earns $ <span id="total-household-income">0</span> annually.
             </div>
           </section>
                   

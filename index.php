@@ -524,7 +524,7 @@
               <button class="usa-button-outline" id="adult-add">+ Add Another Adult</button>
             </div>
             <div id="household-summary">
-              My household has <span id="total-household-members">2</span> members and earns $ <span id="total-household-income">0</span> annually.
+              My household has <span id="total-household-members">0</span> members and earns $ <span id="total-household-income">0</span> annually.
             </div>
           </section>
                   
