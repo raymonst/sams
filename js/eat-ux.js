@@ -1190,6 +1190,9 @@ $(document).ready(function() {
             incomeRequirements = true;
           }
         
+          // calculate income so "summary" object is populated properly (regardless of income requirement)
+          household.calculateIncome();
+          
           form.checkAssistanceRequirements();
           form.checkIncomeRequirements();
    
@@ -1409,9 +1412,9 @@ $(document).ready(function() {
         // retrieve from object & write to summary section
         var summaryText = '<p>';
         if (summary.contactInfo.street.length) {
-          summaryText += summary.contactInfo.street + ' ';
+          summaryText += summary.contactInfo.street + '<br/>';
           if (summary.contactInfo.apartment.length) {
-            summaryText += ', Apartment ' + summary.contactInfo.apartment;
+            summaryText += 'Apartment ' + summary.contactInfo.apartment + '<br/>';
           };    
         };
         summaryText += summary.contactInfo.city + ', ';
@@ -1459,7 +1462,9 @@ $(document).ready(function() {
 
   // SUBMIT APPLICATION 
   $("#form__submit").on("click", function() {
-    
+
+//     console.log(JSON.stringify(summary));    
+
     $.ajax({
       url: "connect.php",
       type: "POST",
