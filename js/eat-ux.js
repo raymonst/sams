@@ -1470,7 +1470,7 @@ $(document).ready(function() {
       type: "POST",
       data: {"summary": JSON.stringify(summary)}
     }).always(function(data) {
-      $("#loading").fadeIn(120);
+      $("#loading").show();
     }).fail(function() {
     }).done(function(data) {
       $("#loading").hide();
