@@ -316,6 +316,7 @@ Yes, a household could participate in more than one of the assistance programs (
           <section class="form__section--sub">
             <div class="form__section--instruction">
               <p>If your household participates in more than one assistance programs, please include only <strong>one</strong> of the case numbers below. It does not matter which one you choose to include.</p>
+              <p>If you&rsquo;d like to learn more about these programs, take a look at the <a href="http://www.fns.usda.gov/programs-and-services" target="_blank">Food and Nutrition Services website</a>.</p>
             </div>
             <fieldset class="usa-fieldset-inputs usa-sans">          
               <legend class="usa-sr-only">Assistance Programs</legend>

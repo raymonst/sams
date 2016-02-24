@@ -102,7 +102,7 @@ function formWarning(state) {
 
   if (state) {
     $(window).bind("beforeunload", function(){
-      return "Your application has not been submitted yet.";
+      return "Your application has not been submitted yet and you will lose your data if you leave.";
     });
   } else {
     $(window).unbind("beforeunload")
